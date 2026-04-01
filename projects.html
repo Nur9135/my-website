@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of SK Nur Alam - IT Support Specialist, Web Developer, and IoT Enthusiast">
+<meta name="keywords" content="portfolio, web developer, IT support, IoT, python, flask">
+<meta name="author" content="SK Nur Alam">
+  <title>SK Nur Alam Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+      <!-- /* ================= NAVBAR SECTION ================= */ -->
+<nav class="navbar">
+  <h2 class="logo">Sk Nur Alam</h2>
+ 
+  <!-- Hamburger -->
+  <div class="menu-btn" id="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+ <ul id="menu">
+    <li>
+  <a href="index.html">
+    <i class="fa-solid fa-house"></i> Home
+  </a>
+</li>
+  <li>
+    <a href="index.html#about">
+      <i class="fa-solid fa-user-astronaut"></i> About
+    </a>
+  </li>
+
+  <li>
+    <a href="projects.html">
+      <i class="fa-solid fa-code"></i> Projects
+    </a>
+  </li>
+
+  <li>
+    <a href=index.html#contact" class="btn">
+      <i class="fa-solid fa-paper-plane"></i> Contact
+    </a>
+  </li>
+</ul>
+</nav>
+
+<div class="container  ">
+
+  <div class="card project-detail animate slide-up" id="banking">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">Banking System (Web + Backend)</h1>
+        <span class="subtitle animate slide-right">
+            Inter-branch communication system with centralized control and operations
+        </span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2 class="animate slide-left"> Project Overview</h2>
+        <p class="animate slide-up">
+            This project is a secure banking platform built using a Flask-based backend and SQL database.
+            It supports a multi-branch architecture where a central zone (super admin) can manage and control all branch operations.
+            The system includes account management, transactions, messaging between branches, and a centralized dashboard for monitoring activities.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2 class="animate slide-right"> Core Functionalities</h2>
+        <ul class="animate slide-up">
+            <li>Centralized control system for super admin to manage all branches.</li>
+            <li>Branch-level operations with role-based access control.</li>
+            <li>Secure authentication system for users and administrators.</li>
+            <li>Real-time communication between branches and central authority.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2 class="animate slide-left"> Account Management</h2>
+        <ul class="animate slide-up">
+            <li>Create and update customer accounts with details such as name, DOB, PAN, email, and balance.</li>
+            <li>Maintain structured records for each customer across branches.</li>
+            <li>Support multiple account types with validation rules.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2 class="animate slide-right"> Transactions</h2>
+        <ul class="animate slide-up">
+            <li>Deposit, withdrawal, and fund transfer operations.</li>
+            <li>Enforced business rules for account types:</li>
+            <ul class="animate slide-left">
+                <li>Savings Account → Minimum balance ₹5000</li>
+                <li>Fixed Deposit → Minimum balance ₹10000</li>
+                <li>Current Account → No restrictions</li>
+            </ul>
+            <li>Transaction history tracking for auditing and monitoring.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2 class="animate slide-left"> Messaging System</h2>
+        <ul class="animate slide-up">
+            <li>Internal messaging system for communication between branches and super admin.</li>
+            <li>Enables coordination, reporting, and issue resolution across the banking network.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2 class="animate slide-right"> Dashboard</h2>
+        <ul class="animate slide-up">
+            <li>Displays high-balance and low-balance accounts.</li>
+            <li>Shows distribution of different account types.</li>
+            <li>Provides transaction history and analytics.</li>
+            <li>Helps administrators monitor system performance and user activity.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2 class="animate slide-left"> Technologies Used</h2>
+        <p class="animate slide-right">
+            Python (Flask), SQL Database, HTML, CSS, JavaScript
+        </p>
+    </div>
+
+</div>
+
+
+
+<div class="card project-detail animate slide-up" id="prescription">
+
+    <div class="project-header animate slide-up">
+        <h1 class="title animate slide-left">Online Prescription App for Doctors</h1>
+        <span class="subtitle animate slide-right">
+            Smart prescription management with predefined diagnosis and digital record keeping
+        </span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2 class="animate slide-left"> Project Overview</h2>
+        <p class="animate slide-up">
+            This web application is designed to help doctors manage patient prescriptions digitally.
+            It reduces paper-based workflows, improves accuracy, and allows doctors to generate, store, and retrieve patient prescriptions efficiently.
+            The system integrates a predefined medical database for tablets, tests, and symptom-based diagnosis.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2 class="animate slide-right"> Prescription Workflow</h2>
+        <ul class="animate slide-up">
+            <li>Doctor selects patient details from the system or creates a new patient record.</li>
+            <li>Doctor chooses symptoms from a predefined symptom database.</li>
+            <li>Based on symptoms, relevant diagnosis suggestions are displayed.</li>
+            <li>Doctor selects prescribed tablets and recommended tests from predefined lists.</li>
+            <li>Prescription is generated dynamically.</li>
+            <li>Doctor can print the prescription for the patient.</li>
+            <li>All prescription data is stored in the database for future reference.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2 class="animate slide-left"> Key Features</h2>
+        <ul class="animate slide-up">
+            <li>Predefined database for tablets, tests, and symptoms.</li>
+            <li>Symptom-based diagnosis assistance for doctors.</li>
+            <li>Digital prescription generation and printing.</li>
+            <li>Patient record management with real-time updates.</li>
+            <li>Secure storage of medical history for future access.</li>
+            <li>Search and retrieve previous patient prescriptions.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2 class="animate slide-right"> Patient Data Management</h2>
+        <ul class="animate slide-up">
+            <li>Stores patient details including name, age, and medical history.</li>
+            <li>Maintains a record of all prescriptions issued to a patient.</li>
+            <li>Allows doctors to view past records for better diagnosis.</li>
+            <li>Supports real-time updates using Firebase.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2 class="animate slide-left"> Report & Prescription Printing</h2>
+        <ul class="animate slide-up">
+            <li>Doctors can generate printable prescriptions instantly.</li>
+            <li>Formatted prescription layout for professional output.</li>
+            <li>Includes patient details, diagnosis, medicines, and tests.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2 class="animate slide-left"> Technologies Used</h2>
+        <p class="animate slide-right">
+            HTML, CSS, JavaScript, Firebase
+        </p>
+    </div>
+
+</div>
+
+
+<div class="card project-detail animate slide-up" id="rfid">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">RFID-Based Attendance System</h1>
+        <span class="subtitle animate slide-right">
+            Automated Attendance with RFID & Facial Recognition
+        </span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Project Overview</h2>
+        <p>
+            This project is an automated attendance system that integrates RFID technology with facial recognition to identify students and mark attendance in real time.
+            It eliminates manual attendance processes, improves accuracy, and ensures efficient tracking of student presence.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> System Workflow</h2>
+        <ul>
+            <li>Each student is assigned a unique RFID card linked to their profile.</li>
+            <li>When a student scans the RFID card, the RFID reader captures the unique ID.</li>
+            <li>The captured data is processed using a Python backend.</li>
+            <li>The system communicates with Firebase to fetch student details in real time.</li>
+            <li>Student information is displayed on the screen automatically.</li>
+            <li>Attendance is marked as “Present” upon successful identification.</li>
+            <li>Facial recognition using OpenCV is used as an additional verification layer.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Key Features</h2>
+        <ul>
+            <li>Real-time attendance marking</li>
+            <li>RFID-based student identification</li>
+            <li>Facial recognition authentication (OpenCV)</li>
+            <li>Firebase real-time database integration</li>
+            <li>Automatic attendance logging</li>
+            <li>PDF report generation</li>
+            <li>Filtering by date, class, and student</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2> Report Generation</h2>
+        <p>
+            The system allows teachers to generate and download attendance reports in PDF format. Reports can be customized based on:
+        </p>
+        <ul>
+            <li>Daily attendance records</li>
+            <li>Monthly summaries</li>
+            <li>Class-wise attendance</li>
+            <li>Individual student attendance using RFID</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2> Technologies Used</h2>
+        <p>
+            HTML, CSS, JavaScript, Python, RFID Hardware, OpenCV, Firebase
+        </p>
+    </div>
+
+</div>
+
+
+
+<div class="card project-detail animate slide-up" id="school">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">School Management System</h1>
+        <span class="subtitle animate slide-right">Web-Based Admin System for Student & Academic Management</span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Project Overview</h2>
+        <p>
+            This project is a web-based School Management System designed to streamline administrative operations.
+            It provides a centralized admin panel to manage student records, admissions, academic results, fees, and other institutional data efficiently.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> System Features & Modules</h2>
+        <ul>
+            <li><strong>Student Management:</strong> Perform CRUD operations on student data including personal details and profile images stored in the database.</li>
+            <li><strong>Admission Management:</strong> Handle student admissions with automated record creation and updates.</li>
+            <li><strong>Result Management:</strong> Create, update, and manage student marksheets and academic results.</li>
+            <li><strong>Fee Management:</strong> Maintain monthly fee records with tracking and updates.</li>
+            <li><strong>ID & Record Generation:</strong> Automated generation of unique student IDs and records.</li>
+            <li><strong>Card Generation:</strong> Generate printable cards such as fee cards, health cards, and library cards for each student.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Functional Workflow</h2>
+        <ul>
+            <li>Admin logs into the system dashboard.</li>
+            <li>Student admission data is entered along with profile image upload.</li>
+            <li>All student information is stored and managed in the Firebase database.</li>
+            <li>Admin can perform Create, Read, Update, and Delete (CRUD) operations on all modules.</li>
+            <li>Fees, results, and admission records are dynamically updated.</li>
+            <li>System generates student-specific cards for fee, health, and library purposes.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> Key Benefits</h2>
+        <ul>
+            <li>Reduces manual administrative workload</li>
+            <li>Centralized and structured data management</li>
+            <li>Improves data accuracy and accessibility</li>
+            <li>Automates record handling and report generation</li>
+            <li>Supports scalable school operations</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2> Technologies Used</h2>
+        <p>HTML, CSS, JavaScript, Firebase</p>
+    </div>
+
+</div>
+
+<div class="card project-detail animate slide-up" id="poultry">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">Smart Poultry Farming System</h1>
+        <span class="subtitle animate slide-right">Final Year B.Tech Capstone Project (IoT-Based Monitoring System)</span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Project Overview</h2>
+        <p>
+            This project is an IoT-based Smart Poultry Farming system designed to monitor environmental conditions
+            such as temperature, ammonia (NH₃), carbon dioxide (CO₂), and smoke levels in real time.
+            The system enables remote monitoring of poultry farm conditions through a web-based dashboard,
+            eliminating the need for continuous physical presence.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> System Architecture & Working</h2>
+        <ul>
+            <li>IoT sensors are deployed in the poultry environment to capture environmental parameters.</li>
+            <li>NodeMCU (WiFi-enabled microcontroller) collects sensor data.</li>
+            <li>The collected data is transmitted over WiFi to a backend/database in real time.</li>
+            <li>The database stores incoming sensor readings for processing and visualization.</li>
+            <li>A web-based dashboard retrieves data via REST API and displays live farm conditions.</li>
+            <li>Admin can monitor the poultry environment remotely without physical presence.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Features</h2>
+        <ul>
+            <li>Real-time monitoring of temperature, NH₃, CO₂, and smoke levels</li>
+            <li>Wireless data transmission using NodeMCU (WiFi)</li>
+            <li>Centralized database storage for sensor data</li>
+            <li>Web-based dashboard for live visualization</li>
+            <li>Remote access for farm monitoring and decision-making</li>
+            <li>Scalable IoT architecture for environmental tracking</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2> Research & Academic Contribution</h2>
+        <ul>
+            <li>Published at the <strong>7th International Joint Conference on Computing Sciences (ICCS-2023)</strong> — “KILBY100”.</li>
+            <li>Focused on integrating IoT technologies for environmental monitoring in poultry farming operations.</li>
+            <li>Designed and developed a web-based dashboard for real-time visualization of sensor data.</li>
+            <li>Implemented Arduino/NodeMCU-based hardware integration for sensor communication.</li>
+            <li>Contributed to end-to-end system development including hardware setup, firmware coding, backend integration, and deployment.</li>
+            <li>Authored a thesis paper documenting system design, implementation, and results.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Key Benefits</h2>
+        <ul>
+            <li>Enables remote monitoring of poultry farm conditions</li>
+            <li>Reduces manual labor and supervision effort</li>
+            <li>Improves farm management efficiency</li>
+            <li>Provides real-time insights for better decision-making</li>
+            <li>Enhances environmental safety for livestock</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2> Technologies Used</h2>
+        <p>Python, IoT Sensors, NodeMCU, REST API, Web Dashboard, Wireless Communication</p>
+    </div>
+
+</div>
+
+
+<div class="card project-detail animate slide-up" id="ecommerce">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">E-Commerce Website</h1>
+        <span class="subtitle animate slide-right">Full-Stack Web Application with Seller & Buyer Roles</span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Project Overview</h2>
+        <p>
+            This project is a full-stack e-commerce web application designed to facilitate buying and selling of products
+            such as clothing and footwear. The platform supports both seller and buyer roles, enabling sellers to manage
+            their products and buyers to browse, filter, and purchase items seamlessly.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> System Roles & Workflow</h2>
+        <ul>
+            <li><strong>Seller:</strong> Can perform CRUD operations (Create, Read, Update, Delete) on their products including adding product details, images, pricing, and categories.</li>
+            <li><strong>Buyer:</strong> Can browse products, view real-time updates, and purchase items through the platform.</li>
+            <li>Products added by sellers are instantly reflected for buyers through the database.</li>
+            <li>Buyers can add items to the cart and proceed with checkout using available payment options.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Key Features</h2>
+        <ul>
+            <li>Seller dashboard for product management</li>
+            <li>Buyer interface for browsing and purchasing products</li>
+            <li>Cart and wishlist functionality</li>
+            <li>Product filtering by:
+                <ul>
+                    <li>Category (Clothing, Shoes, etc.)</li>
+                    <li>Price range</li>
+                    <li>Product type</li>
+                    <li>Seller-specific listings</li>
+                </ul>
+            </li>
+            <li>Gender-based product categorization (Male, Female, Kids)</li>
+            <li>Real-time product updates from database</li>
+            <li>Integrated payment options for checkout</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2> Functional Workflow</h2>
+        <ul>
+            <li>Sellers log in and manage their product listings via a dashboard.</li>
+            <li>Products are stored in Firebase database with associated metadata.</li>
+            <li>Buyers browse the catalog and apply filters to refine search results.</li>
+            <li>Selected items are added to the cart for purchase.</li>
+            <li>Checkout process allows buyers to complete orders using payment options.</li>
+            <li>All updates are reflected in real time across the platform.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Key Benefits</h2>
+        <ul>
+            <li>Efficient marketplace connecting sellers and buyers</li>
+            <li>Real-time synchronization of product data</li>
+            <li>Improved user experience with filtering and categorization</li>
+            <li>Scalable architecture for expanding product categories</li>
+            <li>Supports multiple product types and user roles</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2> Technologies Used</h2>
+        <p>HTML, CSS, JavaScript, Node.js, Firebase</p>
+    </div>
+
+</div>
+
+
+
+<div class="card project-detail animate slide-up" id="hydroponics">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">Automatic Hydroponics System</h1>
+        <span class="subtitle animate slide-right">IoT-Based Smart Agriculture Solution</span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Project Overview</h2>
+        <p>
+            This project is an IoT-based Automatic Hydroponics System designed to grow plants without soil by delivering
+            nutrients directly through water. The system uses sensors and microcontrollers to monitor environmental and
+            chemical parameters and automatically regulate nutrient levels for optimal plant growth.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> System Concept</h2>
+        <ul>
+            <li>Plants are grown in a controlled water-based environment instead of soil.</li>
+            <li>Sensors continuously monitor key parameters such as pH levels and nutrient concentration.</li>
+            <li>Based on sensor readings, the system automatically adjusts nutrient (NPK) levels in the water.</li>
+            <li>Microcontroller (NodeMCU/Arduino) processes sensor data and controls actuators.</li>
+            <li>IoT connectivity enables remote monitoring and system integration.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Functional Workflow</h2>
+        <ul>
+            <li>Sensors collect real-time data from the hydroponic setup (pH, nutrients, etc.).</li>
+            <li>Data is processed by the microcontroller (Arduino/NodeMCU).</li>
+            <li>The system determines whether nutrient levels need adjustment.</li>
+            <li>If required, pumps/dispensers automatically add NPK nutrients into the water.</li>
+            <li>System ensures optimal conditions for plant growth without manual intervention.</li>
+            <li>Data can be transmitted via IoT for monitoring and logging.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2> Collaboration</h2>
+        <p>
+            This project was developed in collaboration with an agriculture student, combining technical expertise with
+            domain knowledge in plant science to optimize nutrient delivery and plant growth conditions.
+        </p>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Key Features</h2>
+        <ul>
+            <li>Soilless plant cultivation using hydroponics</li>
+            <li>Automatic nutrient regulation based on sensor input</li>
+            <li>pH monitoring for maintaining water quality</li>
+            <li>Automated NPK nutrient delivery system</li>
+            <li>IoT-enabled monitoring and control</li>
+            <li>Reduced manual intervention in farming</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> Key Benefits</h2>
+        <ul>
+            <li>Improves crop yield and growth efficiency</li>
+            <li>Reduces water and resource consumption</li>
+            <li>Enables precision agriculture techniques</li>
+            <li>Minimizes human effort and errors</li>
+            <li>Supports sustainable farming practices</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2> Technologies Used</h2>
+        <p>NodeMCU, Arduino, Sensors (pH, nutrient), IoT Communication, Python</p>
+    </div>
+
+</div>
+
+
+<div class="card project-detail animate slide-up" id="restaurant">
+
+    <div class="project-header animate slide-down">
+        <h1 class="title animate slide-left">Restaurant Website</h1>
+        <span class="subtitle animate slide-right">Frontend Web Application with Reservation System</span>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Project Overview</h2>
+        <p>
+            This project is a modern restaurant website designed with a focus on user-friendly UI/UX.
+            It allows customers to browse the menu, explore restaurant offerings, and book tables online
+            by selecting a preferred date and time. The system enhances customer experience and streamlines
+            restaurant operations through digital reservations.
+        </p>
+    </div>
+
+    <div class="section animate slide-right">
+        <h2> System Features</h2>
+        <ul>
+            <li>Interactive menu display with categorized food items</li>
+            <li>Online table reservation system with date and time selection</li>
+            <li>User-friendly and responsive UI/UX design</li>
+            <li>Real-time booking data storage using Firebase</li>
+            <li>Dynamic updates to menu and reservation availability</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Functional Workflow</h2>
+        <ul>
+            <li>Users visit the restaurant website and browse the menu.</li>
+            <li>Customers select desired food items and explore details.</li>
+            <li>Reservation form allows users to choose date, time, and number of guests.</li>
+            <li>Booking details are stored in Firebase database.</li>
+            <li>Admin/restaurant staff can view and manage reservations.</li>
+            <li>The system ensures organized table allocation based on bookings.</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-down">
+        <h2> UI/UX Highlights</h2>
+        <ul>
+            <li>Modern and visually appealing interface</li>
+            <li>Responsive design for mobile, tablet, and desktop</li>
+            <li>Smooth navigation and interactive components</li>
+            <li>Clean layout with optimized user experience</li>
+            <li>Fast-loading and performance-optimized pages</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-left">
+        <h2> Key Benefits</h2>
+        <ul>
+            <li>Simplifies table booking process for customers</li>
+            <li>Reduces manual reservation handling for staff</li>
+            <li>Improves customer engagement through digital interface</li>
+            <li>Provides efficient reservation management system</li>
+            <li>Enhances overall restaurant operational efficiency</li>
+        </ul>
+    </div>
+
+    <div class="section animate slide-up">
+        <h2> Technologies Used</h2>
+        <p>HTML, CSS, JavaScript, Firebase</p>
+    </div>
+
+</div>
+
+
+ 
+
+
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>SK Nur Alam</h3>
+      <p>IT Support Specialist | Web Developer | IoT Enthusiast</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <a href="mailto:sknooralam0007@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+919647937614"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://linkedin.com/in/sk-nur-alam" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 SK Nur Alam. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-js"></div>
+
+
+
+<script src="script.js"></script>  
+
+<script>
+tsParticles.load("particles-js", {
+  background: {
+    color: { value: "#020617" }
+  },
+
+  particles: {
+    number: {
+      value: 80,
+      density: { enable: true, area: 800 }
+    },
+
+    color: {
+      value: ["#38bdf8", "#9333ea", "#0ea5e9"]
+    },
+
+    size: {
+      value: { min: 1, max: 5 } // depth illusion
+    },
+
+    opacity: {
+      value: { min: 0.3, max: 0.8 }
+    },
+
+    links: {
+      enable: true,
+      distance: 120,
+      opacity: 0.2,
+      width: 1,
+      color: "#38bdf8"
+    },
+
+    move: {
+      enable: true,
+      speed: { min: 0.5, max: 2 }, // different speeds = depth
+      direction: "none",
+      random: true,
+      straight: false,
+      outModes: "out"
+    }
+  },
+
+  interactivity: {
+    events: {
+      onHover: {
+        enable: true,
+        mode: "grab"
+      }
+    },
+
+    modes: {
+      grab: {
+        distance: 140,
+        links: {
+          opacity: 0.8
+        }
+      }
+    }
+  },
+
+  detectRetina: true
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+  const elements = document.querySelectorAll(".animate");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+      if (entry.intersectionRatio > 0.15) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show"); // reverse animation
+      }
+
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  elements.forEach(el => observer.observe(el));
+
+});
+
+ 
+</script>
+</body>
+</html>
